@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <!-- এই চিন্হের ভিতরে বাংলায় লেখা গুলো হলো এইচটিএমএল কমেন্ট, এটি ব্রাউজারে দেখা যাবে না, তবে কোডগুলো নিজে এবং অন্যের বুঝবার জন্যে অতিব প্রয়োজন -->
+
+  <meta charset="UTF-8">
+
+  <!-- সাইটে টাইটেল যুক্ত করতে title ট্যগ ব্যবহার করা হয়। -->
+  <title>Web Development Assignment 2</title>
+
+  <!-- স্টাইল ট্যাগ দ্বারা সাইটে Internal style যুক্ত করা হয়। -->
+  <style type="text/css">
+		/* এই চিন্হের ভিতরে বাংলায় লেখা গুলো হলো সিএসএস কমেন্ট, এটি ব্রাউজারে দেখা যাবে না, তবে কোডগুলো নিজে এবং অন্যের বুঝবার জন্যে অতিব প্রয়োজন  */
+		
+		/* ভিন্ন ভিন্ন ব্রাউজার ভিন্ন ভিন্ন স্টাইল দেখায় তাই স্ট্রাইল রিসেট করতে হয়।*/    
+		/* style reset */
+    * {
+      margin: 0; /* এই প্রপার্টি ডকুমেন্টএর সকল ট্যেগের মার্ঝিনকে শুন্য করে। */
+      padding: 0; /* এই প্রপার্টি ডকুমেন্টএর সকল ট্যেগের প্যডিংকে শুন্য করে। */
+    }
+		
+		
+    /* commone style */
+    
+    body {
+      font-family: arial; /* এই প্রপার্টি বডির ফন্ট এরিয়ালে পরিবর্তন করে। */
+      font-size: 16px; /* এই প্রপার্টি বডির ফন্ট সাইজ পরিবর্তন করে। */
+      color: #333; /* এই প্রপার্টি বডির টেক্সট এর রং পরিবর্তন করে। */
+      line-height: 1.5; /* এই প্রপার্টি বডির দুই লাইনের মধ্যে কত টুকু দুরত্ব হবে তা নির্ধারন করে। */
+    }
+    
+    h1 {
+      font-size: 28px; /* এই প্রপার্টি h1 এর ফন্ট সাইজ পরিবর্তন করে। */
+      text-transform: uppercase; /* এই প্রপার্টি h1 এর সকল বর্ণ গুলোকে বড় হাতের বর্ণতে পরিবর্তন করে। */
+      line-height: 1;
+      margin: 5px 0; /* এই প্রপার্টি  সকল h1 এর উপরে এবং নিচে 5px মার্ঝিন এবং দুই সাইডের মার্ঝিন 0px করে। */
+    }
+    
+    h2 {
+      font-size: 25px;
+      line-height: 1;
+      margin: 10px 0;
+    }
+    
+    p {
+      margin: 10px 0;
+    }
+    
+    li {
+      padding-left: 10px; /* এই প্রপার্টি  সকল li এর  বামের প্যডিংকে 10px করে। */
+    }
+    
+    section {
+      padding: 20px 0;
+    }
+    
+    strong {
+      color: #E45B5B; /* এই প্রপার্টি strong ট্যগের টেক্সট এর রং পরিবর্তন করে। */
+    }
+    
+    table,
+    th,
+    td,
+    tr {
+      border: 1px solid #404447; /* এই প্রপার্টি table ট্যগের সকল দিকের বর্ডার নির্ধারন করে */
+      border-collapse: collapse; /* এটি একের অধিক যাতে বর্ডার না হয় সেটি নির্ধারন করে। */
+      padding: 5px;
+    }
+    .container {
+      width: 960px; /* এটি  container ক্লাশ ইলিমেন্টএর প্রস্থ 960px নির্ধারন করে। */
+      margin: 0 auto; /* এটি  container ক্লাশ ইলিমেন্টএর উপরে, নিচে মার্ঝিন 0px এবং বামে, ডানে অটো করে, ফলে container ইলিমেন্টটি একে বারে পেজের মাঝ বরাবর অবস্থান করে ।*/
+      padding: 0px 25px;
+    }
+		.bg {
+      background: #fdfdfd; /* এটি  bg ক্লাশের সকল ইলিমেন্টএর ব্যকগ্রাউন্ড পরিবর্তন করে। */
+    }
+    .alt_bg {
+      background: #B0DBE7;
+    }
+    .heading {
+      background: #B0DBE7;
+      padding: 10px 5px;
+    }
+    
+    .alt_heading {
+      background: #E45B5B;
+      color: #fff;
+      padding: 10px 5px;
+    }
+    .list_item {
+      padding-left: 20px;
+      color: #E45B5B;
+    }
+		tr.odd {
+      background: #E45B5B;
+      color: #fff
+    }
+		
+    /* header section style */
+		
+    #header {
+      background: #404447;
+      color: #fff;
+      overflow: hidden; /* এটি  header ভিতরের কেন ইলিমেন্ট যদি header থেকে উচ্চতায় বড় হয়ে যায় তবে অতিরিক্ত অংশটুকুকে হাইড করে রাখে। */
+    }
+    #brand {
+      width: 50%;
+      float: left; /* এটি ইলিমেন্টটিকে ডকুমেন্টএর বামদিকে নিয়ে যায় । */
+      padding: 10px 0;
+    }
+    
+    #brand p {
+      color: #eee;
+      margin-top: -5px;
+    }
+    
+    #navigation {
+      width: 50%;
+      float: right; /* এটি ইলিমেন্টটিকে ডকুমেন্টএর ডানদিকে নিয়ে যায় । */
+    }
+    
+    #navigation ul {
+      list-style: none; /* এটি লিস্টএর যে বুলেট আকারের চিন্হ আছে সেটিকে রিমুভ করে */
+      float: right;
+    }
+    
+    #navigation ul li {
+      float: left;
+      text-align: center; /* এটি টেক্সটকে মাঝ বরাবর আনে */
+      padding-left: 0;
+      border-left: 1px solid #ed7575; /* শুধুমাত্র বামদিকে বর্ডার দেবার জন্যে ব্যবহার হয়। */
+      border-right: 1px solid #ce3c3c; * শুধুমাত্র ডানদিকে বর্ডার দেবার জন্যে ব্যবহার হয়। */
+    }
+    
+    #navigation ul li a {
+      display: block; /* এটি ইলিমেন্টটিকে কিভাবে দেখাবে তা ঠিক করে, অর্থাৎ ব্লক বা ইনলাইন । */
+      background: #E45B5B;
+      text-transform: uppercase; 
+      text-decoration: none; /* এটি দ্বারা যেকোন লিংকের নিচের আন্ডারলাইকে রিমুভ করা যায় । */
+      color: #fff;
+      padding: 30px 15PX;
+      border-bottom: 4px solid transparent;
+    }
+    
+    #navigation ul li a:hover {
+      background: #db3636;
+      border-bottom-color: #B0DBE7;
+    }
+		
+		/* section three style */
+		
+		#section_three table {
+      width: 50%;
+      margin: 0 auto;
+    }
+    .img {
+      width: 305px;
+      height: auto;
+      border: 5px solid #fdfdfd;
+      display: inline-block;
+      vertical-align: middle; /* এটি ইমেজকে এর উচ্চতার মাঝামাঝি নিয়ে আসে, পাসের টেক্সট এর সাপেক্ষে। */
+    }
+    
+    /* section four style */
+		
+    #section_four form {
+      width: 50%;
+      margin: 0 auto;
+    }
+    .subscribe {
+      width: 75%;
+      border: none;
+      padding: 5px;
+      border: 1px solid #ddd;
+    }
+    
+    .btn {
+      width: 20%;
+      border: none;
+      background: #E45B5B;
+      color: #fff;
+      padding: 5px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+		
+		/* footer style */
+		
+    #footer {
+      background: #404447;
+      color: #fff;
+      padding: 20px 0;
+    }
+    
+    #footer a {
+      color: #E45B5B;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- সাইটের হেডারের জন্যে header ট্যাগ ব্যবহার করা হয়। -->
+  <header id="header">
+    <div class="container">
+      <!-- যেকোন হেডিংকে গুরুপ করতে hgroup ট্যাগ ব্যবহার করা হয়। -->
+      <hgroup id="brand">
+        <h1>Site Name</h1>
+        <!-- যেকোন টেক্সটকে ইটালিক করতে em ট্যাগ ব্যবহার করা হয়। -->
+        <p><em>Site tag line</em></p>
+      </hgroup>
+      <!-- সাইটের নেভিগেসন্স বা মেনু এর জন্যে nav ট্যাগ ব্যবহার করা হয়। -->
+      <nav id="navigation">
+        <!-- যেকোন আনঅর্ডার লিস্ট তৈরি করতে ul ট্যাগ ব্যবহার করা হয়। -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- সাইটের একই ধরনের কন্টেন্টকে section ট্যাগ এর ভিতরে রাখতে হয়। -->
+  <section id="section_one" class="bg">
+    <div class="container">
+      <h2 class="heading">This is section heading one</h2>
+      <p>With HTML you can create your own Web site.This tutorial teaches you everything about HTML.HTML is easy to learn - You will enjoy it.With HTML you can create your own Web site.This tutorial teaches you everything about HTML.HTML is easy to learn - You will enjoy it.</p>
+      <ul class="list_item">
+        <li>List item one</li>
+        <li>List item two</li>
+        <li>List item three</li>
+        <li>List item four</li>
+      </ul>
+    </div>
+  </section>
+  <section id="section_two" class="alt_bg">
+    <div class="container">
+      <h2 class="alt_heading">This is section heading two</h2>
+      <!-- যেকোন টেক্সটকে বোল্ড করতে strong ট্যাগ ব্যবহার করা হয়। -->
+      <p>With HTML you can create your own Web site.This tutorial teaches you everything about HTML.HTML is easy to learn - You will enjoy it.With HTML you can create your own Web site.This tutorial teaches you everything about HTML.HTML is easy to learn - <strong>You will enjoy it</strong>.</p>
+      <!-- সাইটের কোন কন্টেন্টকে ভাগ করতে div ট্যাগ ব্যবহার করা হয়। -->
+      <div class="gallary">
+        <!-- সাইটের ইমেজ যুক্ত করতে img ট্যাগ ব্যবহার করা হয়। -->
+        <!-- সাইটের img ট্যগ দ্বারা যুক্ত ইমেজ যদি কোন কারনে লোড না হয় তবে alt ট্যগে ব্যবহার কৃত টেক্সট ব্রাউজার দেখা যাবে। -->
+        <img class="img" src="images/image_1.jpg" alt="Sample Image" />
+        <img class="img" src="images/image_2.jpg" alt="Sample Image" />
+        <!-- ইচ্ছাকৃত ভাবে ইমেজের ঠিকানা ভূল টাইপ করা হয়েছে, যাতে alt এর ভিতরের টেক্সট দেখা যায়। -->
+        <img class="img" src="image_3.jpg" alt="This image not loaded" />
+      </div>
+    </div>
+  </section>
+  <section id="section_three" class="bg">
+    <div class="container">
+      <h2 class="heading">This is section heading three</h2>
+      <p>Below table explain what language do what?</p>
+      <!-- সাইটের টেবিল যুক্ত করতে table ট্যাগ ব্যবহার করা হয়। -->
+      <table>
+        <!-- টেবিলর প্রতিটি রো এর জন্যে tr ট্যাগ ব্যবহার করা হয়। -->
+        <tr class="odd">
+          <!-- টেবিলর প্রতিটি কলামের হেডারের জন্যে একটি করে th ট্যাগ ব্যবহার করা হয়। -->
+          <th>Language</th>
+          <th>Why It Use</th>
+        </tr>
+        <tr>
+          <!-- টেবিলর প্রতিটি কলামের ডাটার জন্যে একটি করে td ট্যাগ ব্যবহার করা হয়। -->
+          <td>HTML</td>
+          <td>It gives the skeleton of the site.</td>
+        </tr>
+        <tr class="odd">
+          <td>CSS</td>
+          <td>It gives the style and outlook of the site.</td>
+        </tr>
+        <tr>
+          <td>Javascript</td>
+          <td>It adds interaction to the site.</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <section id="section_four" class="alt_bg">
+    <div class="container">
+      <h2 class="alt_heading">This is section heading four</h2>
+      <p>With HTML you can create your own Web site.This tutorial teaches you everything about HTML.HTML is easy to learn - You will enjoy it.With HTML you can create your own Web site.This tutorial teaches you everything about HTML.HTML is easy to learn - You will enjoy it.</p>
+      <!-- সাইটের ফরম যুক্ত করতে form ট্যাগ ব্যবহার করা হয়। -->
+      <form action="">
+        <!-- সাইটের ইনপুট যুক্ত করতে input ট্যাগ ব্যবহার করা হয়। -->
+        <!-- সাইটের ইনপুট ট্যগের কাজ হল সাইট ব্যবহার কারি হতে ডাটা সংগ্রহ করা -->
+        <input class="subscribe" type="text" placeholder="Your Email" />
+        <input class="btn" type="submit" value="Submit" />
+      </form>
+    </div>
+  </section>
+
+  <!-- সাইটের ফুটার যুক্ত করতে footer ট্যাগ ব্যবহার করা হয়। -->
+  <footer id="footer">
+    <div class="container">
+      <!-- &copy; হলো একটি কপিরাইট সিম্বল, এটিকে HTML Entities বলে। -->
+      <p>All Right Reserved &copy; 2017 by <a href="#">Md. Mahafuzur Rahaman</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
