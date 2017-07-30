@@ -1,0 +1,102 @@
+/*
+color palate
+#F01C28; 
+#F98329;
+#B8E820;
+#7698C5;
+#A64DA7;
+#BE7F5E;
+
+#F7FCF6;
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #F7FCF6;
+	font-family: arial;
+	color: #fff;
+}
+div h4{
+	text-align: center;
+	font-size: 25px;
+}
+.div_one{
+	background: #F01C28;
+	height: 300px;
+	
+	line-height: 300px; /* this code center text vertical axis */
+}
+.div_two{
+	background: #F7FCF6;
+	height: 210px;
+	color: black;
+	
+	line-height: 210px; /* this code center text vertical axis */	
+}
+.div_one_two{
+	width: 33.3333%;
+	float: left;	
+}
+.div_three{
+	width: 33.3333%;
+	height: 510px;
+	float: left;
+	overflow: hidden;
+	background: #F98329;
+	
+	line-height: 510px; /* this code center text vertical axis */
+}
+.div_four{
+	width: 33.3333%;
+	height: 100px;
+	float: left;
+	background: #B8E820;
+	
+	line-height: 100px; /* this code center text vertical axis */
+}
+.div_five{
+	height: 510px;
+	background: #7698C5;
+	
+	line-height: 510px; /* this code center text vertical axis */
+}
+.div_six{
+	height: 110px;
+	background: #F7FCF6;
+	color: black;
+	
+	line-height: 110px; /* this code center text vertical axis */
+}
+.div_five_six{
+	width: 33.3333%;
+	float: right;
+}
+.div_seven{
+	width: 66.6666%;
+	height: 210px;
+	background: #A64DA7;
+	float: left;
+	
+	line-height: 210px; /* this code center text vertical axis */
+}
+.div_eight{
+	width: 10%;
+	height: 160px;
+	background: #F7FCF6;
+	float: left;
+	color: black;
+	
+	line-height: 160px; /* this code center text vertical axis */
+}
+.div_nine{
+	width: 90%;
+	height: 160px;
+	background: #BE7F5E;
+	float: left;
+	overflow: hidden;
+	
+	line-height: 160px; /* this code center text vertical axis */
+}

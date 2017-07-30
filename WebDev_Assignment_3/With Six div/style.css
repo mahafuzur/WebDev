@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #F7FCF6;
+	font-family: arial;
+}
+div h4{
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+}
+.div_one{
+	width: 33.3333%;
+	background: #F01C28;
+	height: 300px;
+	float: left;
+	
+	line-height: 300px; /* this code center the text verticaly */
+}
+.div_two{
+	width: 33.3333%;
+	background: #F98329;
+	height: 510px;
+	float: left;
+	overflow: hidden;
+	
+	line-height: 510px; /* this code center the text verticaly */	
+}
+.div_three{
+	width: 33.3333%;
+	background: #B8E820;
+	height: 100px;
+	float: left;
+	
+	line-height: 100px; /* this code center the text verticaly */	
+}
+.div_four{
+	width: 33.3333%;
+	background: #7698C5;
+	height: 510px;
+	float: right;
+	
+	line-height: 510px; /* this code center the text verticaly */	
+}
+.div_five{
+	width: 66.6666%;
+	background: #A64DA7;
+	height: 210px;
+	float: left;
+	
+	line-height: 210px; /* this code center the text verticaly */
+}
+.div_six{
+	width: 90%;
+	background: #BE7F5E;
+	height: 160px;
+	float: right;
+	
+	line-height: 160px; /* this code center the text verticaly */
+}
