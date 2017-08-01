@@ -40,7 +40,8 @@ body {
   color: #fff;
 }
 
-.menu li:hover>a {
+.menu li:hover>a,
+.menu li.active a {
   color: #fff;
   background: #e67e22;
 }
