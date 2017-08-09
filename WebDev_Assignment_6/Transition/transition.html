@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Transition</title>
+  <style type="text/css">
+    .container {
+      width: 50%;
+      padding: 20px;
+      margin: 0 auto;
+      outline: 1px dotted #333;
+      font-family: arial;
+      text-align: center;
+      perspective: 1000px;
+    }
+    
+    h2 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    
+    .box {
+      width: 300px;
+      height: 120px;
+      padding: 10px;
+      margin: 30px auto;
+      background: skyblue;
+      text-transform: uppercase;
+      line-height: 100px;
+      box-sizing: border-box;
+    }
+    
+    .transition_1 {
+      transition-property: background;
+      transition-duration: 0.7s;
+      transition-timing-function: ease-in-out;
+      /* all in one line */
+      transition: background 0.7s ease-in-out;
+    }
+    
+    .transition_1:hover {
+      background-color: crimson;
+    }
+    
+    .transition_2 {
+      transition-property: width background;
+      transition-delay: 0.4s;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-out;
+    }
+    
+    .transition_2:hover {
+      width: 100%;
+      background: crimson;
+    }
+    
+    .transition_3 {
+      transition: all 300ms ease;
+    }
+    
+    .transition_3:hover {
+      border-radius: 50%;
+      background-color: darkorange;
+    }
+    
+    .transition_4 {
+      transform: rotate(0deg);
+      transition: transform 300ms ease-in-out;
+    }
+    
+    .transition_4:hover {
+      transform: rotate(360deg);
+    }
+    
+    .transition_5 {
+      transform: rotateY(0deg);
+      transition: all 1s ease;
+    }
+    
+    .transition_5:hover {
+      transform: rotateY(360deg);
+      background: green;
+    }
+    
+    .transition_6 {
+      transition: all 1s linear;
+      background: linear-gradient(90deg, skyblue, orange);
+    }
+    
+    .transition_6:hover {
+      background: linear-gradient(90deg, orange, skyblue);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>The Power Of Transition</h2>
+    <p>Please Hover the element</p>
+    <div class="box transition_1">Transition 1</div>
+    <div class="box transition_2">Transition 2</div>
+    <div class="box transition_3">Transition 3</div>
+    <div class="box transition_4">Transition 4</div>
+    <div class="box transition_5">Transition 5</div>
+    <div class="box transition_6">Transition 6</div>
+    <p>To be continued</p>
+
+    <p><a href="https://eshikhon.com/students/mahafuzurrahaman1986/">All rights reserved &copy; Md. Mahafuzur Rahaman</a></p>
+  </div>
+
+</body>
+
+</html>

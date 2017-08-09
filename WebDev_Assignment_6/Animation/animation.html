@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animation</title>
+  <style type="text/css">
+    .container {
+      width: 50%;
+      padding: 20px;
+      margin: 0 auto;
+      outline: 1px dotted #333;
+      font-family: arial;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    h2 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    
+    .box {
+      width: 300px;
+      height: 120px;
+      padding: 10px;
+      margin: 30px auto;
+      background: skyblue;
+      text-transform: uppercase;
+      line-height: 100px;
+      box-sizing: border-box;
+      perspective: 1000px;
+    }
+    
+    .animation_1 {
+      animation-name: box1;
+      animation-duration: 1s;
+      animation-delay: 1s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes box1 {
+      0% {
+        background: crimson;
+        width: 300px;
+      }
+      50% {
+        width: 150px;
+      }
+      100% {
+        background: skyblue;
+        width: 300px;
+      }
+    }
+    
+    .animation_2 {
+      position: relative;
+      animation: box2 10s infinite both ease-in-out;
+    }
+    
+    @keyframes box2 {
+      0% {
+        background: crimson;
+        left: -100%;
+      }
+      100% {
+        background: skyblue;
+        left: 100%;
+      }
+    }
+    
+    .animation_3 {
+      animation: box3 1s infinite both ease-in-out;
+    }
+    
+    @keyframes box3 {
+      0% {
+        opacity: 0;
+        transform: rotateY(-90deg) translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: rotateY(0deg) translateY(0px);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>The Power Of Animation</h2>
+    <div class="box animation_1">Animation 1</div>
+    <div class="box animation_2">Animation 2</div>
+    <div class="box animation_3">Animation 3</div>
+    <p>To be continued</p>
+    <p><a href="https://eshikhon.com/students/mahafuzurrahaman1986/">All rights reserved &copy; Md. Mahafuzur Rahaman</a></p>
+  </div>
+
+</body>
+
+</html>

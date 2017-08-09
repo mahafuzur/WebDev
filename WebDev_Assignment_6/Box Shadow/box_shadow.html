@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Box Shadow</title>
+  <style type="text/css">
+    .container {
+      width: 50%;
+      padding: 20px;
+      margin: 0 auto;
+      outline: 1px dotted #333;
+      font-family: arial;
+      text-align: center;
+    }
+    
+    h2 {
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    
+    .box {
+      width: 300px;
+      height: 100px;
+      padding: 10px;
+      margin: 30px auto;
+      background: skyblue;
+      text-transform: uppercase;
+      line-height: 100px;
+    }
+    
+    .shadow_1 {
+      -webkit-box-shadow: 0px 1px 2px 0px #aaa;
+      -moz-box-shadow: 0px 1px 2px 0px #aaa;
+      box-shadow: 0px 1px 2px 0px #aaa;
+    }
+    
+    .shadow_2 {
+      -webkit-box-shadow: 10px 10px 0px 0px #aaa;
+      -moz-box-shadow: 10px 10px 0px 0px #aaa;
+      box-shadow: 10px 10px 0px 0px #aaa;
+    }
+    
+    .shadow_3 {
+      -webkit-box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.5);
+      -moz-box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0px 0px 0px 10px rgba(255, 255, 255, 0.5);
+    }
+    
+    .shadow_4 {
+      -webkit-box-shadow: inset 0px 0px 10px 10px rgba(255, 255, 255, 0.5);
+      -moz-box-shadow: inset 0px 0px 10px 10px rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0px 0px 10px 10px rgba(255, 255, 255, 0.5);
+    }
+    
+    .shadow_5 {
+      -webkit-box-shadow: inset 0px 0px 5px 0px #000;
+      -moz-box-shadow: inset 0px 0px 5px 0px #000;
+      box-shadow: inset 0px 0px 5px 0px #000;
+    }
+    
+    .shadow_6 {
+      -webkit-box-shadow: 0px 1px 1px 0px #aaa, 0px 10px 0px -5px skyblue, 0px 10px 1px -4px #aaa, 0px 20px 0px -10px skyblue, 0px 20px 1px -9px #aaa;
+      -moz-box-shadow: 0px 1px 1px 0px #aaa, 0px 10px 0px -5px skyblue, 0px 10px 1px -4px #aaa, 0px 20px 0px -10px skyblue, 0px 20px 1px -9px #aaa;
+      box-shadow: 0px 1px 1px 0px #aaa, 0px 10px 0px -5px skyblue, 0px 10px 1px -4px #aaa, 0px 20px 0px -10px skyblue, 0px 20px 1px -9px #aaa;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>The Power Of Box Shadow</h2>
+    <div class="box shadow_1">Box Shadow 1</div>
+    <div class="box shadow_2">Box Shadow 2</div>
+    <div class="box shadow_3">Box Shadow 3</div>
+    <div class="box shadow_4">Box Shadow 4</div>
+    <div class="box shadow_5">Box Shadow 5</div>
+    <div class="box shadow_6">Box Shadow 6</div>
+    <p>To be continued</p>
+    <p><a href="https://eshikhon.com/students/mahafuzurrahaman1986/">All rights reserved &copy; Md. Mahafuzur Rahaman</a></p>
+  </div>
+
+
+</body>
+
+</html>
