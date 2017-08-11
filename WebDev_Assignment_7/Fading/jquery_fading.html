@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Fading Effect</title>
+	<style type="text/css">
+		.container{
+			width: 800px;
+			margin: 20px auto;
+			outline: 1px dotted black;
+			padding: 20px;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		.btn{
+			border: 1px solid #ddd;
+			background: #eee;
+			padding: 5px 10px;
+			border-radius: 5px;
+			border-top: 1px solid #fff;
+			border-left: 1px solid #fff;
+			margin:10px;
+			margin-bottom: 30px;
+			box-shadow: 1px 1px 2px 0px #aaa;
+			cursor: pointer;
+		}
+		.box{
+			width: 100%;
+			height: 200px;
+			background: crimson;
+			font-size: 20px;
+			color: #fff;
+			padding-top: 100px;
+			position: relative;
+		}
+		hr{
+			margin: 20px 0;
+		}
+		.hint{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button class="btn fade_out">Fade Out</button>
+		<button class="btn fade_in">Fade In</button>
+		
+		<div class="box one">
+			I am a div,<br>
+			click Fade In button to fade in me,<br>
+			click Fade Out button to fade out me.
+		</div>
+		<hr>
+		<button class="btn toggle">Fade Out</button>
+		<div class="box two">
+			I am a div,<br>
+			Click the Fade Out button to fade out me.
+		</div>
+		<p class="hint">Click the Fade In button to fade in the div.</p>
+		<hr>
+		<button class="btn fade_to">Fade To</button>
+		<div class="box three">
+			I am a div,<br>
+			Click the Fade To button for fadeing me 0.3 opacity.
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="../Resource/jquery.js"></script>
+	<script type="text/javascript" src="jquery_fading.js"></script>
+</body>
+</html>

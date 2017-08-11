@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Animation Effect</title>
+  <style type="text/css">
+    .container {
+      width: 800px;
+      height: 600px;
+      margin: 20px auto;
+      outline: 1px dotted black;
+      padding: 20px;
+      text-align: center;
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn {
+      border: 1px solid #ddd;
+      background: #eee;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border-top: 1px solid #fff;
+      border-left: 1px solid #fff;
+      margin: 10px;
+      margin-bottom: 30px;
+      box-shadow: 1px 1px 2px 0px #aaa;
+      cursor: pointer;
+    }
+    
+    .box {
+      width: 300px;
+      height: 200px;
+      background: crimson;
+      font-size: 20px;
+      color: #fff;
+      padding-top: 100px;
+      position: absolute;
+      left: -100%;
+      opacity: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn animate">Animate</button>
+    <p>Click animate button to see animation.</p>
+    <div class="box">
+      <p class="text">I am a div.</p>
+    </div>
+
+    <script type="text/javascript" src="../Resource/jquery.js"></script>
+    <script type="text/javascript" src="jquery_callback.js"></script>
+</body>
+
+</html>
