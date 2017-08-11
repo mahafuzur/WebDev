@@ -1,66 +1,90 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
+
 <head>
-	<meta charset="UTF-8">
-	<title>jQuery Animation Effect</title>
-	<style type="text/css">
-		.container{
-			width: 800px;
-			height: 600px;
-			margin: 20px auto;
-			outline: 1px dotted black;
-			padding: 20px;
-			text-align: center;
-			box-sizing: border-box;
-			position: relative;
-			overflow: hidden;
-		}
-		.btn{
-			border: 1px solid #ddd;
-			background: #eee;
-			padding: 5px 10px;
-			border-radius: 5px;
-			border-top: 1px solid #fff;
-			border-left: 1px solid #fff;
-			margin:10px;
-			margin-bottom: 30px;
-			box-shadow: 1px 1px 2px 0px #aaa;
-			cursor: pointer;
-		}
-		.box{
-			width: 300px;
-			height: 200px;
-			background: crimson;
-			font-size: 20px;
-			color: #fff;
-			padding-top: 100px;
-			position: absolute;
-			left: -100%;
-			opacity: 0;
-		}
-		hr{
-			margin: 20px 0;
-		}
-		.hint{
-			display: none;
-		}
-		.text{
-			position: absolute;
-			right: -100%;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <title>jQuery Stop Method</title>
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    
+    .container {
+      width: 800px;
+      height: 600px;
+      background: skyblue;
+      font-family: sans-serif;
+      margin: 20px auto;
+      outline: 1px dotted black;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn {
+      border: 1px solid #ddd;
+      background: #eee;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border-top: 1px solid #fff;
+      border-left: 1px solid #fff;
+      margin: 10px;
+      margin-bottom: 30px;
+      box-shadow: 1px 1px 2px 0px #aaa;
+      cursor: pointer;
+    }
+    
+    .box {
+      width: 300px;
+      height: 200px;
+      background: crimson;
+      font-size: 20px;
+      color: #fff;
+      padding: 50px;
+      position: absolute;
+      left: -100%;
+      opacity: 0;
+      overflow: hidden;
+    }
+    
+    hr {
+      margin: 20px 0;
+    }
+    
+    .hint {
+      display: none;
+    }
+    
+    .text {
+      position: absolute;
+      right: -100%;
+    }
+    
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+  </style>
 </head>
+
 <body>
-	<div class="container">
-		<button class="btn animate">Animate</button>
-		<button class="btn stop">Stop</button>
-		<button class="btn reset">Reset</button>
-		<p>Click animate button to see animation.</p>
-		<div class="box">
-			<p class="text">I am a div.</p>
-		</div>
-		
-	<script type="text/javascript" src="../Resource/jquery.js"></script>
-	<script type="text/javascript" src="jquery_stop.js"></script>
+  <div class="container">
+    <button class="btn animate">Animate</button>
+    <button class="btn stop">Stop</button>
+    <button class="btn reset">Reverse animation</button>
+    <p>Click animate button to see animation.</p>
+    <div class="box">
+      <p class="text">I am a div.</p>
+    </div>
+    <p class="footer"><a href="https://eshikhon.com/students/mahafuzurrahaman1986/">All rights reserved &copy; Md. Mahafuzur Rahaman</a></p>
+  </div>
+
+  <script type="text/javascript" src="../Resource/jquery.js"></script>
+  <script type="text/javascript" src="jquery_stop.js"></script>
 </body>
+
 </html>

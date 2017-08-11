@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Event</title>
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    
+    .container {
+      width: 800px;
+      height: 1500px;
+      font-family: sans-serif;
+      background: skyblue;
+      margin: 20px auto;
+      outline: 1px dotted black;
+      padding: 30px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .box {
+      width: 400px;
+      height: 200px;
+      margin: 20px auto;
+      background: crimson;
+      font-size: 20px;
+      color: #fff;
+      padding: 50px;
+    }
+    
+    .btn {
+      border: 1px solid #b10326;
+      background: crimson;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border-top: 1px solid #f85677;
+      border-left: 1px solid #f85677;
+      margin: 10px;
+      margin: 50px auto;
+      box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+    }
+    
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>jQuery Events</h2>
+    <div class="box click">Click me</div>
+    <div class="box dblclick">Double Click Me</div>
+    <div class="box mouseenter">Enter Your Mouse</div>
+    <div class="box mouseleave">Leave Your Mouse</div>
+    <div class="box keypress">Press Enter</div>
+    <div class="box resize">Resize your window</div>
+
+    <p><a class="btn" target="_blank" href="http://api.jquery.com/category/events/">Learn More Event</a></p>
+
+    <p class="footer"><a href="https://eshikhon.com/students/mahafuzurrahaman1986/">All rights reserved &copy; Md. Mahafuzur Rahaman</a></p>
+  </div>
+
+  <script type="text/javascript" src="../Resource/jquery.js"></script>
+  <script type="text/javascript" src="jquery_events.js"></script>
+</body>
+
+</html>

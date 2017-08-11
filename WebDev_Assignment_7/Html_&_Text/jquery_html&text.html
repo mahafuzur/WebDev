@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>jQuery Callback Function</title>
+  <title>jQuery Html and Text Method</title>
   <style type="text/css">
     * {
       box-sizing: border-box;
@@ -11,14 +11,13 @@
     
     .container {
       width: 800px;
-      height: 600px;
+      height: 500px;
       background: skyblue;
       font-family: sans-serif;
       margin: 20px auto;
       outline: 1px dotted black;
       padding: 20px;
       text-align: center;
-      box-sizing: border-box;
       position: relative;
       overflow: hidden;
     }
@@ -36,17 +35,20 @@
       cursor: pointer;
     }
     
-    .box {
-      width: 300px;
-      height: 200px;
-      background: crimson;
-      font-size: 16px;
-      color: #fff;
+    hr {
+      margin: 40px 0px;
+    }
+    
+    input {
+      width: 50%;
       padding: 10px;
-      position: absolute;
-      left: -100%;
-      opacity: 0;
-      margin-bottom: 50px;
+      margin: 40px 0;
+      border: 1px solid skyblue;
+      border-radius: 5px;
+    }
+    
+    input:focus {
+      outline: 1px solid crimson;
     }
     
     .footer {
@@ -55,21 +57,25 @@
       left: 0;
       right: 0;
     }
+
   </style>
 </head>
 
 <body>
   <div class="container">
-    <button class="btn animate">Animate</button>
-    <p>Click animate button to see animation.</p>
-    <div class="box">
-      <p class="text">I am a div.</p>
-    </div>
+    <button class="btn injectHtml">Inject Html</button>
+    <button class="btn injectText">Inject Text</button>
+    <button class="btn reset">Reset</button>
+    <hr>
+    <label for="userInput">Enter your text here and then press above button</label><br>
+    <input id="userInput" type="text" placeholder="Enter your text here..">
+
+    <p id="output">Your Output</p>
 
     <p class="footer"><a href="https://eshikhon.com/students/mahafuzurrahaman1986/">All rights reserved &copy; Md. Mahafuzur Rahaman</a></p>
   </div>
   <script type="text/javascript" src="../Resource/jquery.js"></script>
-  <script type="text/javascript" src="jquery_callback.js"></script>
+  <script type="text/javascript" src="jquery_html&text.js"></script>
 </body>
 
 </html>

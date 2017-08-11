@@ -3,12 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>jQuery Callback Function</title>
+  <title>jQuery Css Method</title>
   <style type="text/css">
-    * {
-      box-sizing: border-box;
-    }
-    
     .container {
       width: 800px;
       height: 600px;
@@ -36,17 +32,9 @@
       cursor: pointer;
     }
     
-    .box {
-      width: 300px;
-      height: 200px;
-      background: crimson;
-      font-size: 16px;
-      color: #fff;
-      padding: 10px;
-      position: absolute;
-      left: -100%;
-      opacity: 0;
-      margin-bottom: 50px;
+    .font {
+      padding: 5px;
+      background-color: rgb(220, 20, 60);
     }
     
     .footer {
@@ -55,21 +43,22 @@
       left: 0;
       right: 0;
     }
+
   </style>
 </head>
 
 <body>
   <div class="container">
-    <button class="btn animate">Animate</button>
-    <p>Click animate button to see animation.</p>
-    <div class="box">
-      <p class="text">I am a div.</p>
-    </div>
+    <button class="btn increaseFontSize">Increase Font Size</button>
+    <button class="btn decreaseFontSize">Decrease Font Size</button>
+    <button class="btn bgGreen">Green Background</button>
+    <p class="font">Change my font size &amp; Background color</p>
 
     <p class="footer"><a href="https://eshikhon.com/students/mahafuzurrahaman1986/">All rights reserved &copy; Md. Mahafuzur Rahaman</a></p>
   </div>
+
   <script type="text/javascript" src="../Resource/jquery.js"></script>
-  <script type="text/javascript" src="jquery_callback.js"></script>
+  <script type="text/javascript" src="jquery_css.js"></script>
 </body>
 
 </html>

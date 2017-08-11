@@ -11,7 +11,7 @@ $(document).ready(function () {
       });
       // chining the method 
       $(".box").slideUp(2000).slideDown(2000).css({
-        "background-color": "skyblue"
+        "background-color": "orange"
       });
     });
   });
