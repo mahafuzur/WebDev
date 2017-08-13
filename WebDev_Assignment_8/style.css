@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 60%;
+  margin: 50px auto;
+  background: skyblue;
+  padding: 5%;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 10px solid #fff;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.navigation {
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: 1px solid #bbb;
+  font-weight: 700;
+  color: #444;
+  text-shadow: 1px 1px 0px #fff;
+  background: #ccc;
+  margin: 0 10px;
+  border-radius: 5px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+}
+
+.image_box {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  box-shadow: 0px 0px 0px 9000px rgba(0, 0, 0, 0.5);
+}
+
+.image_box span {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.image_box img {
+  width: 100%;
+  border: 10px solid #fff;
+}
+
+.caption {
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 25px;
+  line-height: 50px;
+  font-family: arial;
+}
