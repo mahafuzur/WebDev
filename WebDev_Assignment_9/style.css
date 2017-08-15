@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+}
+
+html,
+:root {
+  font-size: 10px;
+  /* this baground use from http://lea.verou.me/css3patterns/ */
+  background-color: hsl(34, 53%, 82%);
+  background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.2) 5px, hsla(197, 62%, 11%, 0.2) 10px, hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.2) 35px, hsla(5, 53%, 63%, 0.2) 40px, hsla(197, 62%, 11%, 0.2) 40px, hsla(197, 62%, 11%, 0.2) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px, hsla(5, 53%, 63%, 0.2) 60px, hsla(5, 53%, 63%, 0.2) 70px, hsla(35, 91%, 65%, 0.2) 70px, hsla(35, 91%, 65%, 0.2) 80px, hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.2) 90px, hsla(5, 53%, 63%, 0.2) 110px, hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.2) 120px, hsla(197, 62%, 11%, 0.2) 140px), repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.2) 5px, hsla(197, 62%, 11%, 0.2) 10px, hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.2) 35px, hsla(5, 53%, 63%, 0.2) 40px, hsla(197, 62%, 11%, 0.2) 40px, hsla(197, 62%, 11%, 0.2) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px, hsla(5, 53%, 63%, 0.2) 60px, hsla(5, 53%, 63%, 0.2) 70px, hsla(35, 91%, 65%, 0.2) 70px, hsla(35, 91%, 65%, 0.2) 80px, hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.2) 90px, hsla(5, 53%, 63%, 0.2) 110px, hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.2) 140px, hsla(197, 62%, 11%, 0.2) 160px);
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h3 {
+  color: #34495e;
+  border-bottom: 1px dotted #e67e22;
+  margin-bottom: 0.5em;
+  line-height: 1;
+  padding: 0.5em 0em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+section,
+footer {
+  padding: 1.5em;
+  background: #fff;
+}
+
+section {
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* menu style */
+
+.menu {
+  background-color: #29455d;
+}
+
+.menu>li {
+  border-top: 0.071em solid #1d3143;
+  border-bottom: 0.071em solid #355977;
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.8em 1.2em;
+  color: #fff;
+}
+
+.menu li:hover>a {
+  background-color: #fe7c60;
+  color: #29455d;
+}
+
+.menu li a:active {
+  background-color: #e84b3a;
+}
+
+
+/* sub menu style */
+
+.menu ul {
+  background: #48647c;
+}
+
+.menu ul>li {
+  border-top: 0.071em solid #31495d;
+  border-bottom: 0.071em solid #4e708d;
+}
+
+.menu ul a {
+  text-indent: 1em;
+  white-space: nowrap;
+}
+
+.menu ul a:before {
+  content: ">>";
+  margin-right: 3px;
+}
+
+.toggle_menu {
+  background: #333;
+  display: block;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  text-decoration: none;
+}
+
+.toggle_menu i {
+  float: right;
+}
+
+@media screen and (min-width: 799px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  h3 {
+    font-size: 3rem;
+    text-shadow: 1px 1px 0px #eee, 2px 2px 0px #ccc, 3px 3px 0px #ddd;
+  }
+  .toggle_menu {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .menu ul {
+    display: none;
+    position: absolute;
+    left: 0px;
+    min-width: 150px;
+    top: 100%;
+    z-index: 100;
+  }
+  .menu:before,
+  .menu:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .menu li {
+    float: left;
+    position: relative;
+  }
+  .menu>li {
+    border-top: none;
+    border-bottom: none;
+    border-right: 0.071em solid #1d3143;
+    border-left: 0.071em solid #355977;
+  }
+  .menu>li:last-child {
+    border-right: none;
+  }
+  .menu>li:first-child {
+    border-left: none;
+  }
+  /* submenu style */
+  .menu ul li {
+    width: 100%;
+  }
+  .menu ul>li:first-child {
+    border-top: none;
+  }
+  .menu ul>li:last-child {
+    border-bottom: none;
+  }
+  .menu ul li a {
+    width: 100%;
+    padding-left: 1.2em;
+    text-indent: 0px;
+  }
+  .menu ul li a:before {
+    display: none;
+  }
+  /* display the menu */
+  /*
+  .menu li:hover ul {
+    display: block;
+  }
+*/
+}
+
+.scrol_to_top {
+  position: fixed;
+  right: 50px;
+  bottom: -9999px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
